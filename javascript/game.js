@@ -5,7 +5,12 @@ var targetNumber = ;
 
   var counter = 0;
 
-  // Now for the hard part. Creating multiple crystals each with their own unique number value.
+// There will be four crystals displayed as buttons on the page.
+//   List out four BUTTONS on the screen – each is the image of a crystal. Each button has a cick event associated with it. Is this within the html?
+
+//   The player will be shown a random number at the start of the game.
+  var randomNumber = Math.floor( Math.random() * (100 - 0)) + 1;
+  
 
   // We begin by expanding our array to include four options.
   var numberOptions = [10, 5, 3, 7];
@@ -55,7 +60,3 @@ var targetNumber = ;
     else if (counter >= targetNumber) {
       alert("You lose!!");
     }
-
-
-
-
